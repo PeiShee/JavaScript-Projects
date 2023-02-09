@@ -19,8 +19,14 @@ function substraction_Function() {
     document.getElementById("Math2").innerHTML = "2 - 2 = " + Substraction;
 }
 
-// Multiplication function
+// Multiplication function (this is wrong)
 function multiplication() {
+    var simple_Math = 2*2;
+    document.getElementById("Math3").innerHTML = "6 x 8 = " + simple_Math;
+}
+
+// Multiplication function (this is correct, the function need to be the same as onlick )
+function multiplication_Function() {
     var simple_Math = 2*2;
     document.getElementById("Math3").innerHTML = "6 x 8 = " + simple_Math;
 }
@@ -38,14 +44,15 @@ function simplemath_Function() {
 }
 
 //remainder after division
-function modulus_Operator () {
+function modulus_operator_Function() {
     var simple_Math = 25 % 6;
     document.getElementById("Math6").innerHTML = "When you divide 25 by 6 you have a remainder of: "+ simple_Math;
 }
 
 //can be incresent or decresent
-function negation_Operator () {
+function negation_operator_Function() {
     var x = 2;
     document.getElementById("Math7").innerHTML = -x;
 }
+
 
