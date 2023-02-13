@@ -34,9 +34,9 @@ function Add_number_6 () {
 Add_numbers_5 ();
 Add_numbers_6 ();
 
-//If Statement with Data().getHours()
+//If Statement with Date().getHours()
 function get_Date() {
-    if (new Date().getHours() < 18) {
+    if (new Date().getHours() > 18) {
         document.getElementById("Greeting").innerHTML = "How are you today?";
     }
 }
