@@ -35,8 +35,8 @@ Add_numbers_5 ();
 Add_numbers_6 ();
 
 //If Statement with Data().getHours()
-function get_Data() {
-    if (new Data().getHours() < 18) {
+function get_Date() {
+    if (new Date().getHours() < 18) {
         document.getElementById("Greeting").innerHTML = "How are you today?";
     }
 }
@@ -55,7 +55,7 @@ function Age_Function () {
 
 //Else if statement
 function Time_function() {
-    var Time = new Data().getHours();
+    var Time = new Date().getHours();
     var Reply;
     if (Time < 12 == Time > 0) {
         Reply = "It is the afternoon";
