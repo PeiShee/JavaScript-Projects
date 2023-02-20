@@ -17,14 +17,14 @@ function slice_Method () {
 
 //Changed to upper case
 function myFunction() {
-    let text = document.getElementById("demo").innerHTML;
+    let text = document.getElementById("demo1").innerHTML;
     document.getElementById("demo1").innerHTML =
     text.toUpperCase();
   }
 
 //search() method
-let text = "Mr. Blue has a blue house"
-let position = text.search("has");
+let text2 = "Mr. Blue has a blue house"
+let position = text2.search("has");
     document.getElementById("demo2").innerHTML = position;
 
 //number method: toString()
