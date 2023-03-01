@@ -1,7 +1,7 @@
 //creates an object to keep track of values
 const Calculator = {
     //this is display 0 on the screen
-    Display_Value: '0'
+    Display_Value: '0',
     //this will hold the first operand for any expressions, we set it to null for now.
     First_Operand: null,
     //this checks whether or not the second operand has been input
@@ -37,7 +37,7 @@ function Input_Decimal(dot) {
     }
 //this section handles operators
 function Handle_Operator(Next_Operator) {
-    const ( First_Operand, Display_Value, operator ) = Calculator
+    const { First_Operand, Display_Value, operator } = Calculator
     //When an operator key is pressed, we convert the current number displayed on the screen to a number and then store the result in
     //Calculator.First_Operand if it doesnt already exist
     const Value_of_Input = parseFloat(Display_Value);
