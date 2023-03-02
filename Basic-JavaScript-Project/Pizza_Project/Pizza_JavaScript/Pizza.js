@@ -46,11 +46,33 @@ function getTopping(runningTotal,text1) {
 	} else {
 		toppingTotal = 0;
 	}
-	runningTotal = (runningTotal + toppingTotal);
-	console.log("total selected topping items: "+toppingCount);
+
+	getVegetables(runningTotal,text1);
+
+function getVegetables(runningTotal,text1) {
+	var vegetableTotal = 0;
+	var selectedVegetable = [];
+	var vegetableArray = document.getElementsByClassName("vegetable");
+	for (var k = 0; k < vegetableArray.length; k++) {
+		if (vegetableArray[k].checked) {
+			selectedTopping.push(vegetableArray[k].value);
+			console.log("selected vegetable item: ("+vegetableArray[k].value+")");
+			text1 = text1+vegetableArray[k].value+"<br>";
+		}
+	}
+	var vegetableCount = selectedVegetable.length;
+	if (vegetableCount > 1) {
+		vegetableTotal = (vegetableCount - 1);
+	} else {
+		vegetableTotal = 0;
+	}
+
+	runningTotal = (runningTotal + toppingTotal + vegetableTotal);
+	console.log("total selected topping items: "+toppingCount+vegetableCount);
 	console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");
 	console.log("topping text1: "+text1);
 	console.log("Purchase Total: "+"$"+runningTotal+".00");
 	document.getElementById("showText").innerHTML=text1;
 	document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>$"+runningTotal+".00"+"</strong></h3>";
 };	
+}

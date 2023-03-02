@@ -1,7 +1,32 @@
+body {
+    background-color: Darkblue;
+    margin: 0;
+	}
+
+h1 {
+	line-height: 50px;
+	font-weight: 900;
+	font-size: 35px;
+	text-align: center;
+	color: white;
+	font-family:"sans-serif";
+	}
+
+h3 {
+	line-height: 50px;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: left;
+	color: white;
+	font-family:"Times New Roman";
+	}
+
 #menuBG {
 	width:400px;
 	height:470px;
 	margin:10px auto;
+	color: white;
+	font-family:"Arial";
 	}
 
 #frmMenu {
