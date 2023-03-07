@@ -3,8 +3,9 @@
         <head>
             <meta charset="utf-8">
             <title>The Space Station / Resort</title>
-            <link rel="stylesheet" href="share.css">
-            <link rel="stylesheet" href="animation.css">
+            <link rel="stylesheet" href="./CSS/share.css">
+            <link rel="stylesheet" href="./CSS/animation.css">
+            <script src="JS/One_Page_Website.js" defer></script>
         </head>
         <body>
 
@@ -28,7 +29,72 @@
                     </div>
                 </div>
             </div>
-            <!-----END HOME---->
+
+         <!-----LightBox---->
+         <div class="row">
+            <div class="column">
+              <img src="img1_wide.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img2_wide.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img3_wide.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img4_wide.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="img1_wide.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="img2_wide.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="img3_wide.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="img4_wide.jpg" style="width:100%">
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+          
+          
+              <div class="column">
+                <img class="demo cursor" src="img1_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="img2_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="img3_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="img4_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+            </div>
+          </div>
+          
+            
+         <!-----END HOME---->
 
             <!-----GALLERY---->
             <section id="gallery">
@@ -39,7 +105,7 @@
                         <!-----PHOTO-CONTAINER 1---->
                         <div class="photo-container">
                             <div class="photo">
-                                <img src="../images/thumb/thumbnail_1.jfif" alt="">
+                                <img src="./thumb/thumbnail_1.jpg" alt="">
                                 <div class="photo-overlay">
                                     <h3>Click to Enlarge</h3>
                                     <p> We have several space launches departing daily, book your flight today!</p>
@@ -51,7 +117,7 @@
                         <!--PHOTO-CONTAINER 2-->
                         <div class="photo-container">
                             <div class="photo">
-							    <img src="../images/thumb/thumbnail_2.jpg" alt="">
+							    <img src="./thumb/thumbnail_2.jpg" alt="">
 							    <div class="photo-overlay">
 								    <h3>Click to Enlarge</h3>
 								    <p>We have several space launches departing daily, book your flight to </p>
@@ -63,7 +129,7 @@
 					    <!--PHOTO-CONTAINER 3-->
                         <div class="photo-container">
                             <div class="photo">
-							    <img src="../images/thumb/thumbnail_3.jpg" alt="">
+							    <img src="./thumb/thumbnail_3.jpg" alt="">
                                 <div class="photo-overlay">
 								    <h3>Click to Enlarge</h3>
 								    <p>We have several space launches departing daily, book your flight to </p>
@@ -75,7 +141,7 @@
 					    <!--PHOTO-CONTAINER 4-->
                         <div class="photo-container">
                             <div class="photo">
-							    <img src="../images/thumb/thumbnail_4.jfif" alt="">
+							    <img src="./thumb/thumbnail_4.jpg" alt="">
                                 <div class="photo-overlay">
 								    <h3>Click to Enlarge</h3>
 								    <p>We have several space launches departing daily, book your flight to </p>
@@ -87,7 +153,7 @@
 					    <!--PHOTO-CONTAINER 5-->
                         <div class="photo-container">
                             <div class="photo">
-							    <img src="../images/thumb/thumbnail_5.jfif" alt="">
+							    <img src="./thumb/thumbnail_5.jpg" alt="">
                                 <div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight to </p>
@@ -99,7 +165,7 @@
                         <!--PHOTO-CONTAINER 6-->
                         <div class="photo-container">
                             <div class="photo">
-							    <img src="../images/thumb/thumbnail_6.jpg" alt="">
+							    <img src="./thumb/thumbnail_6.jpg" alt="">
                                 <div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight to </p>
@@ -111,7 +177,7 @@
                         <!--PHOTO-CONTAINER 7-->
                         <div class="photo-container">
                             <div class="photo">
-							    <img src="../images/thumb/thumbnail_7.jfif" alt="">
+							    <img src="./thumb/thumbnail_7.jpg" alt="">
                                 <div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight to </p>
@@ -123,7 +189,7 @@
                         <!--PHOTO-CONTAINER 8-->
                         <div class="photo-container">
                             <div class="photo">
-							    <img src="../images/thumb/thumbnail_8.jpg" alt="">
+							    <img src="./thumb/thumbnail_8.jpg" alt="">
                                 <div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight to </p>
@@ -135,7 +201,7 @@
                         <!--PHOTO-CONTAINER 9-->
                         <div class="photo-container">
                             <div class="photo">
-							    <img src="../images/thumb/thumbnail_9.jpg" alt="">
+							    <img src="./thumb/thumbnail_9.jpg" alt="">
                                 <div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight to </p>
