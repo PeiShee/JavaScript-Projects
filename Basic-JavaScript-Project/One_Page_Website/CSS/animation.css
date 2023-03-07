@@ -112,8 +112,11 @@ MENU SECTION ANIMATION
   
   .column {
     float: left;
-    width: 25%;
+    width: 23%;
+    z-index: -1;
   }
+
+
   
   /* The Modal (background) */
   .modal {
