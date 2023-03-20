@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-</head>
-	
-<script>
-$(document).ready(function() 
-	$("html").append( (
-		"<body>\
-			<div id='container'>\
-				<div id='inner'>\
-					<h1>Basic jQuery</h1>\
-					<p id='1'>Paragraph 1</p>\
-					<p id='2'>Paragraph 2</p>\
-					<p id='3'>Paragraph 3</p>\
-				</div>\
-			<div>\
-		</body>"
-	))
-	$("#2").css(("color":"red"));
-	$("#3").click(function() {
-		$('h1').hide ();
-	});
+	<head>
+		<!----address that allows us tho use and download jquery from the library-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
 
+<script>
+/* jQuery is replaced by $sign. document is the entire html page we requesting to the DOM and to check if it is ready*/
+/* When document ready, do this function.*/
+	$(document).ready(function() {
+		/*inside the $(), is the target, in this case, we target the html tag. append is to insert content*/
+		$("html").append( 
+			/* \ is to tell the web browser that we are continuing our next string to the next line*/
+			/* ID must be in single quote.*/
+			"<body>\
+				<div id='container'>\
+					<div id='inner'>\
+						<h1>Basic jQuery</h1>\
+						<p id='1'>Paragraph 1</p>\
+						<p id='2'>Paragraph 2</p>\
+						<p id='3'>Paragraph 3</p>\
+					</div>\
+				<div>\
+			</body>"
+		);
+		/* to change the colour of paragraph, we will target p id, then we will affect CSS*/
+		/* inside {}, put the property and attribute.*/
+		$("#2").css({"color":"red"});
+		/* when user clicks on Paragraph 3, the basic jquery will disappear, can be found in jquery mouse effect */
+		/* targeting on #3, when we click, the following function will be performed, which is the h1 will be hidden. */
+		$("#3").click(function() {
+			$("h1").hide ();
+		});
+
+	});
 </script>
 </html>
