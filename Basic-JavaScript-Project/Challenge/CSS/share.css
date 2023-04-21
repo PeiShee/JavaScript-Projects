@@ -39,7 +39,7 @@ h1::after { /*This is the underline*/
     content: "";
     height: 2px;
     width: 150px;
-    background: black;
+    background: #E91C1C;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
 }
@@ -47,7 +47,6 @@ h1::after { /*This is the underline*/
 h2 {
     line-height: 30px;
     color: #E91C1C
-    text-align: center;
 }
 
 h3 {
