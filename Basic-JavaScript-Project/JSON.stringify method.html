@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="myDog"></p>
+
+    <script>
+        /*JavaScript dictionary object*/
+        var dog = {name:"Dax", breed: "Great Pyreness", color: "White"};
+        /*convert JavaScript objects to string format*/
+        var JSONstring = JSON.stringify(dog);
+        document.getElementById("myDog").innerHTML = JSONstring;
+    </script>
+
+<script>
+    /*JavaScript object*/
+    var dog = {name:"Dax", breed: "Great Pyreness", color: "White"};
+    /*convert JavaScript object to JSON string*/
+    var JSONstring = JSON.stringify(dog);
+    /*parse JSON string to JavaScript object*/
+    var parsedDog = JSON.parse(JSONstring);
+    /*access and display properties of the parsed object*/
+    document.getElementById("myDog").innerHTML = parsedDog.name + ' the ' + parsedDog.breed;
+</script>
+
+    </body>
+</html>
